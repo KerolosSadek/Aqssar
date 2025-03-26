@@ -1,0 +1,195 @@
+/* Global Styles */
+@import url('https://fonts.cdnfonts.com/css/neo-sans-arabic');
+
+body {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    background-color: #f8f9fa;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home Page Background */
+.home-page {
+    background: url('images/background-wave.png') no-repeat center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 60px 0 0;
+    height: 100%;
+}
+
+.logo {
+    padding: 0 20px;
+}
+
+.home-page .content {
+    padding: 0 40px;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+}
+
+.mobiles-img {
+    position: relative;
+    top: 80px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-content {
+    padding: 120px 0;
+    position: relative;
+    top: 50px;
+}
+
+.text-content h1 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    color: #228B7F;
+}
+
+.text-content .desc {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #464646;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating .user {
+    font-weight: 700;
+    font-size: 20px;
+    color: #228B7F;
+}
+
+.rating .rate {
+    font-weight: 600;
+    font-size: 16px;
+    color: #464646;
+}
+
+.review {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    color: #464646;
+}
+
+/* Button */
+.btn-success {
+    background-color: #007f5f;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #006c50;
+}
+
+/* Users Count */
+.users-count {
+    margin: 20px 0 60px;
+    padding: 0px 145px;
+}
+
+.users-count img {
+    width: 140px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .text-content {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .text-content .desc {
+        font-size: 22px;
+    }
+
+    .mobiles-img {
+        top: 50px;
+        max-width: 85%;
+        margin: auto;
+        display: block;
+    }
+
+    .rating {
+        justify-content: center;
+    }
+
+    .users-count {
+        padding: 0;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .users-count img {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .text-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .text-content .desc {
+        font-size: 20px;
+    }
+
+    .review {
+        font-size: 18px;
+    }
+
+    .mobiles-img {
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+    }
+
+    .users-count {
+        padding: 0;
+        margin: 50px 0;
+    }
+
+    .users-count img {
+        display: flex;
+        margin: auto;
+    }
+}
