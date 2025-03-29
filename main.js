@@ -1,5 +1,6 @@
 // Js File
 
+// Function to handle the download button click event
 function handleAppDownload() {
     // Track the click event
     fbq('track', 'Downloads');
