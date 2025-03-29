@@ -1,4 +1,3 @@
-// Js File
 // Function to handle the download button click event and redirect to the appropriate app store based on the device type
 function handleAppDownload() {
     // Track the click event
