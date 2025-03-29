@@ -6,11 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favIcon.png">
     <title>أقصر</title>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script');
+
+        fbq('init', '566482335692261');
+        fbq('track', 'Leads');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=566482335692261&ev=PageView&noscript=1" />
+    </noscript>
+
+    <!-- Temporary Facebook CAPI Call (client-side, not for production) -->
+    <script>
+        fetch('https://graph.facebook.com/v18.0/566482335692261/events?access_token=EAAJRvNZAFhZCcBOzDXxZAX2HHdk0qGQ68SE1ZCI8ULZCZB1bAlZCTMPn72ZAlCHAKxZAfYX7wTDXkPUdJXRk4NZCZCwypW0ZClyLP3WDQbDbegPWUaOLRiigMqZCCZADn9ZCCQUnhi4kkUMecKa0FdfqjQok9CF1O5yxIs7WUNOaIJnyB2ls6eCWKJrs5B92V2uPnOUdZCDqsgZDZD', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                data: [{
+                    event_name: 'PageView',
+                    event_time: Math.floor(Date.now() / 1000),
+                    action_source: 'website',
+                    user_data: {
+                        client_user_agent: navigator.userAgent
+                    }
+                }]
+            })
+        });
+    </script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="main.css">
 </head>
+
+
 
 <body>
     <div class="home-page">
@@ -23,24 +69,28 @@
             <div class="row content justify-content-center">
                 <!-- Text Content Section -->
                 <div class="col-lg-5 col-md-12 text-content">
-                    <h1 class="mb-4">مع أقصر، اختصر وقتك واقرأ بذكاء! ملخصات كتب مسموعة في 15 دقيقة فقط.</h1>
-                    <p class="desc mb-5">حوّل القراءة إلى عادة يومية وانضم إلى آلاف القراء في رحلّة التعلّم والتطور.</p>
+                    <h1 class="mb-lg-3">مع أقصر، اختصر وقتك واقرأ بذكاء! ملخصات كتب مسموعة في 15 دقيقة فقط.</h1>
+                    <p class="desc mb-lg-5">حوّل القراءة إلى عادة يومية وانضم إلى آلاف القراء في رحلّة التعلّم والتطور.
+                    </p>
 
                     <!-- Rating Section -->
-                    <div class="rating mt-5">
+                    <div class="rating">
                         <span class="user">Ali.B</span>
                         <span>تقييم</span>
                         <span class="rate"> (4.6 ⭐) </span>
                     </div>
 
                     <!-- Review Section -->
-                    <p class="review mb-4">“ تجربة رائعة وخيار لمن يفضل الإستماع للكتب المفضلة لديه وتنمية عادة القراءة.
+                    <p class="review mb-lg-4">“ تجربة رائعة وخيار لمن يفضل الإستماع للكتب المفضلة لديه وتنمية عادة
+                        القراءة.
                         حبيت التطبيق ”</p>
 
                     <!-- Download Button -->
-                    <a href="#" class="btn my-4 p-0">
+                    <a href="#" class="btn my-lg-4 p-0" onclick="handleAppDownload();" target="_blank"
+                        rel="noopener noreferrer">
                         <img src="images/btn.png" alt="Download App" width="250px">
                     </a>
+
                 </div>
 
                 <!-- Mobile App Preview Image -->
@@ -60,6 +110,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
 </body>
 
 </html>
