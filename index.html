@@ -12,7 +12,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -22,13 +22,12 @@
         }(window, document, 'script');
 
         fbq('init', '566482335692261');
-        fbq('track', 'PageView');
+        fbq('track', 'Leads');
     </script>
     <noscript>
         <img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=566482335692261&ev=PageView&noscript=1" />
     </noscript>
-    <!-- End Facebook Pixel Code -->
 
     <!-- Temporary Facebook CAPI Call (client-side, not for production) -->
     <script>
@@ -56,6 +55,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="main.css">
 </head>
+
 
 
 <body>
@@ -86,10 +86,11 @@
                         حبيت التطبيق ”</p>
 
                     <!-- Download Button -->
-                    <a href="https://itunes.apple.com/sa/app/%D8%A3%D9%82%D8%B5%D8%B1-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%A1%D8%A9-%D8%A3%D8%B3%D9%87%D9%84/id1178137933?mt=8"
-                        class="btn my-lg-4 p-0" target="_blank" rel="noopener noreferrer">
+                    <a href="#" class="btn my-lg-4 p-0" onclick="handleAppDownload();" target="_blank"
+                        rel="noopener noreferrer">
                         <img src="images/btn.png" alt="Download App" width="250px">
                     </a>
+
                 </div>
 
                 <!-- Mobile App Preview Image -->
@@ -109,6 +110,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
 </body>
 
 </html>
