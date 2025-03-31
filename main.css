@@ -77,7 +77,7 @@ body {
 
 .review {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 31px;
     color: #464646;
 }
@@ -89,6 +89,11 @@ body {
 
 .users-count img {
     width: 140px;
+}
+
+/* Hide mobile layout on desktop */
+.home-page-mobile {
+    display: none;
 }
 
 /* === Tablet / iPad Layouts (Keep scroll & structure) === */
@@ -110,7 +115,7 @@ body {
     }
 
     .review {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 26px;
     }
 
@@ -148,19 +153,25 @@ body {
 
     html,
     body {
-        overflow: hidden;
+        /* overflow: hidden; */
         height: 100vh;
     }
 
     .home-page {
-        padding: 20px 0 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: none;
     }
 
+    .home-page-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+        padding: 20px;
+    }
+
+
     .logo {
-        padding: 0 10px;
+        padding: 0;
     }
 
     .home-page .content {
@@ -185,8 +196,7 @@ body {
 
     .text-content h1 {
         font-size: 16px;
-        line-height: 30px;
-        margin-bottom: 10px;
+        line-height: 24px;
     }
 
     .text-content .desc {
@@ -199,7 +209,7 @@ body {
     }
 
     .review {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 22px;
     }
 
