@@ -91,8 +91,21 @@ body {
     width: 140px;
 }
 
+.users-count-mobile {
+    margin: 20px 0 60px;
+    padding: 0px 145px;
+}
+
+.users-count-mobile img {
+    width: 140px;
+}
+
 /* Hide mobile layout on desktop */
 .home-page-mobile {
+    display: none;
+}
+
+.users-count-mobile {
     display: none;
 }
 
@@ -143,6 +156,17 @@ body {
         margin: auto;
     }
 
+    .users-count-mobile {
+        padding: 0;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    .users-count-mobile img {
+        width: 110px;
+        margin: auto;
+    }
+
     .btn img {
         width: 200px;
     }
@@ -159,6 +183,14 @@ body {
 
     .home-page {
         display: none;
+    }
+
+    .users-count {
+        display: none;
+    }
+
+    .users-count-mobile {
+        display: block;
     }
 
     .home-page-mobile {
@@ -234,6 +266,17 @@ body {
     }
 
     .users-count img {
+        width: 90px;
+        margin: auto;
+    }
+
+    .users-count-mobile {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .users-count-mobile img {
         width: 90px;
         margin: auto;
     }
